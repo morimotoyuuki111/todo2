@@ -19,8 +19,8 @@ github.com/murai/go-user-management/model"でパッケージがインポート�
 - router.go
 ```go
 router.goのUserListDisplayAction が宣言されていない。
-
 ```
+
 ```go
 ListDisplayAction //関数名が異なっていた
 ```
