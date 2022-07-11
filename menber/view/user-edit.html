@@ -6,6 +6,15 @@
 </head>
 <body>
     <h1>会員編集</h1>
-    <p>会員ID:{{.id}}の編集ページです。</p>
+    <p>会員ID:{{.user.id}}の編集ページです。</p>
+    <form action="/user/edit/complete" method="POST">
+        <label>会員ID</label>
+        <input type="text" name="id" value='{{.user.id}}' readonly>
+        <br>
+        <label>名前</label>
+        <input type="text" name="name" value='{{.user.name}}'>
+        <br>
+        <input type="submit" value="更新">
+    </form>
 </body>
 </html>

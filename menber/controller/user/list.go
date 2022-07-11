@@ -2,8 +2,12 @@ package user
 
 import (
 	"github.com/gin-gonic/gin"
+	"gin_test/model"
 )
 
-func UserListDisplayAction(c *gin.Context){
-		c.HTML(200, "user-list.html", gin.H{})
+func ListDisplayAction(c *gin.Context){
+	c.HTML(200, "user-list.html", gin.H{
+			// モデルでテーブルから会員全てを取得
+			"list": model.GetUserList(),
+	})
 }

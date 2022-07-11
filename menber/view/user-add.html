@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>会員追加</title>
-  </head>
-  <body>
+</head>
+<body>
     <h1>会員追加</h1>
-  </body>
+    <form action="/user/add/complete" method="POST">
+        <label>会員IDは自動で割り当てられます</label>
+        <br>
+        <label>名前</label>
+        <input type="text" name="name">
+        <br>
+        <input type="submit" value="追加">
+    </form>
+</body>
 </html>
