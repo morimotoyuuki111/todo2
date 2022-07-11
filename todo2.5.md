@@ -17,6 +17,7 @@ github.com/murai/go-user-management/model"でパッケージがインポート�
 ```
 
 - router.go
+
 ```go
 router.goのUserListDisplayAction が宣言されていない。
 ```
@@ -30,6 +31,7 @@ ListDisplayAction //関数名が異なっていた
 EditCompleteAction が usercompiler パッケージによって宣言されていない。と出ました。とエラー
 
 //edig.goに必要なコードの書き忘れ
+```
 
 # 学んだこと
 ```go
